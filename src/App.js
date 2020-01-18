@@ -1,6 +1,8 @@
 // Toda vez que for usar o HTML dentro do JavaScript Devemos importar o "React"
 
-import React, { useState }from 'react';
+import React from 'react';
+
+import './global.css';
 
 // Componentes: É uma função que retonar um conteúdo HTML, ou seja, um Bloco isolado de HTML, CSS e JS
 // o qual não intefere no restante da aplicação.
@@ -11,17 +13,16 @@ import React, { useState }from 'react';
 //ou informações que um componente PAI passa para um componente filho.
 
 function App() {
-  const [contador, setContador] = useState (0);
-    function incrementar(){
-      setContador(contador+1);
-    }
-      return (
-      <>
-        <h1>Contadores : {contador} </h1>
-        <button onClick={incrementar}>Adicionar mais 1</button>
-      </>
-      );
-    
+  return(
+    <div id="app">
+      <aside>
+ 
+      </aside>
+      <main>
+
+      </main>
+    </div>
+  );
 }
 
 export default App;
